@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
+
 // O codigo recebe dois inteiros e os imprime trocando os valores das variaveis 
 int main()
 {   
@@ -9,9 +9,9 @@ int main()
     int a = 0, b = 0, aux = 0;
     printf("Insira dois numeros inteiros: 'a' e 'b' \n\n");
     fflush (stdin);
-    scanf("%d \n\n",&a);
+    scanf("%d",&a);
     fflush (stdin);
-    scanf("%d \n\n",&b);
+    scanf("%d",&b);
     fflush (stdin);
     aux = a;
     a = b;
@@ -21,4 +21,4 @@ int main()
     system ("pause");
     return 0;   
 }
-*/
+

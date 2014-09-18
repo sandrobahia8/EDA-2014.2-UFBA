@@ -2,43 +2,72 @@
 #include <stdlib.h>
 
 
-int ordena (int a, int b, int c);
+
+void ordena (int a, int b, int c);
 
 int main (){
     
     int a = 0,b = 0,c = 0;
+    printf("Digite tres valores inteiros distintos para serem exibidos ordenados\n\n");
     printf("Insira o valor de a: ");
     scanf("%d",&a);
-    printf("Insira o valor de b: ");
+    printf("\nInsira o valor de b: ");
     scanf("%d",&b);
-    printf("Insira o valor de c: ");
+    printf("\nInsira o valor de c: ");
     scanf("%d",&c);
+    printf("\n\n\n");
     
-    ordena (a, b, c);
+    if ((a==b) && (b==c)){
+       printf("Numeros iguais. Devem ser digitados numeros diferentes.\n\n");
+       system("pause");
+       return 1;
+       }
+    else
+        ordena (a, b, c);
         
+    printf("\n\n\n");   
     system("pause");
     return 0;
 }
 
-int ordena (int a, int b, int c){
+void ordena (int a, int b, int c){
+    int aux=0;
     
-    if ((a >= b) && (b >= c))
-       printf ("a: %d > b: %d > c: %d\n",a,b,c);
+    if ((a <= b) && (b <= c))
+        printf ("Dados ordenados: a = %d  b = %d  c = %d\n",a,b,c);
     
-    else if ((a >= c) && (c >= b))
-         printf ("a: %d > c: %d > b: %d\n",a,c,b);
-    
-    else if ((b >= a) && (a >= c))
-         printf ("b: %d > a: %d > c: %d\n",b,a,c);
-    
-    else if ((b >= c) && (c >= a))
-         printf ("b: %d > c: %d > a: %d\n",b,c,a);
-    
-    else if ((c >= a)&& (a >= b))
-         printf ("c: %d > a: %d > b: %d\n",c,a,b);
-    
-    else if ((c >= b) && (b >= a))
-         printf ("c: %d > b: %d > a: %d\n",c,b,a);
-    
+    else if ((a <= c) && (c <= b)){
+         aux=c;
+         c=b;
+         b=aux;
+         printf ("Ordenando temos: a = %d  b = %d  c = %d\n",a,b,c);
+         }    
+    else if ((b <= a) && (a <= c)){
+         aux=b;
+         b=a;
+         a=aux;
+         printf ("Ordenando temos: a = %d  b = %d  c = %d\n",a,b,c);
+         }    
+    else if ((b <= c) && (c <= a)){
+         aux=a;
+         a=b;
+         b=c;
+         c=aux;
+         printf ("Ordenando temos: a = %d  b = %d  c = %d\n",a,b,c);
+         }
+    else if ((c <= a)&& (a <= b)){
+         aux=b;
+         b=a;
+         a=c;
+         c=aux;
+         printf ("Ordenando temos: a = %d  b = %d  c = %d\n",a,b,c);
+         }
+    else if ((c <= b) && (b <= a)){
+         aux=a;
+         a=c;
+         c=aux;
+         printf ("Ordenando temos: a = %d  b = %d  c = %d\n",a,b,c);
+         }
 
 }
+
