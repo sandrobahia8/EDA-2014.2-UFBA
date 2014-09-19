@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Apenas teste no Git
+
+int ordena (int x, int y);
+
+int main (){
+    
+    int x = 0, y = 0;
+    printf("Digite tres valores inteiros distintos para serem exibidos ordenados\n\n");
+    printf("Insira o valor de x: ");
+    scanf("%d",&x);
+    printf("\nInsira o valor de y: ");
+    scanf("%d",&y);
+    printf("\n\n\n");
+    
+    ordena (x, y);
+        
+    printf("\n\n\n");   
+    system("pause");
+    return 0;
+}
+
+int ordena (int x, int y){
+    int aux=0;
+    
+    if ((x <= y))
+        printf ("Dados ordenados: x = %d  y = %d\n",x,y);
+    
+    else if ((y <= x)){
+         aux=y;
+         y=x;
+         x=aux;
+         printf ("Odenendo temos: x = %d  y = %d\n",x,y);
+         }    
+    
+}    
