@@ -1,38 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Apenas teste no Git
+//O programa lê dois valores inteiros e chama uma subrotina que ordena esses valores nas variaveis. 
 
-int ordena (int x, int y);
+void ordena (int *x, int *y);
 
 int main (){
     
-    int x = 0, y = 0;
-    printf("Digite tres valores inteiros distintos para serem exibidos ordenados\n\n");
-    printf("Insira o valor de x: ");
-    scanf("%d",&x);
-    printf("\nInsira o valor de y: ");
-    scanf("%d",&y);
+    int a = 0, b = 0;
+    printf("Digite dois valores inteiros distintos para serem exibidos ordenados\n\n");
+    printf("Insira o valor de a: ");
+    scanf("%d",&a);
+    printf("\nInsira o valor de b: ");
+    scanf("%d",&b);
     printf("\n\n\n");
     
-    ordena (x, y);
-        
-    printf("\n\n\n");   
+    ordena (&a, &b);
+    printf("\n\nDados ordenados: a = %d  b = %d\n",a,b);
+    
     system("pause");
     return 0;
 }
 
-int ordena (int x, int y){
-    int aux=0;
+void ordena (int *x, int *y){
+	int a = 0, b = 0;
+    a = *x;
+    b = *y;
+    if ((a <= b)){
+		*x = b;
+		*y = a;		
+		}        
     
-    if ((x <= y))
-        printf ("Dados ordenados: x = %d  y = %d\n",x,y);
-    
-    else if ((y <= x)){
-         aux=y;
-         y=x;
-         x=aux;
-         printf ("Odenendo temos: x = %d  y = %d\n",x,y);
-         }    
-    
-}    
+    else 
+	/*	if ((a > b)){
+			*x = a;
+			*y = b;
+		}*/
+         
+}

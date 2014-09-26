@@ -8,3 +8,5 @@ Professor: Danilo
 Aluno: Alessandro Oliveira
 
 Resolução dos exercícios da lista 01.
+
+Mudanca em 19/09/2014.
