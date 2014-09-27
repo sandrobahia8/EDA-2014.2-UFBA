@@ -10,7 +10,7 @@ int main (){
     
     int n = 0;
     float a, b, c, x1 = 0, x2 = 0;
-    printf("Digite tres valores nao nulos para os fatores de uma equacao do segundo grau do tipo ax2+bx+c = 0.\n\n");
+    printf("\n\nDigite tres valores nao nulos para os fatores de uma equacao do segundo grau do tipo ax2+bx+c = 0.\n\n");
     do {
     printf("Insira o valor de a: ");
     scanf("%f",&a);
@@ -27,8 +27,7 @@ int main (){
 		system("pause");
 		return 1;
 	}
-    printf("\nA equacao possue %d raiz(es)",n);
-    printf("\n\nVeja as raizes da equacao do segundo grau informada:\n");
+    printf("\n\nAs raizes da equacao do segundo grau informada sao:\n");
     printf("\n\nX1 = %.2f\n",x1);
     printf("\n\nX2 = %.2f\n",x2);
     
@@ -37,7 +36,7 @@ int main (){
 }
 
 int raizes (float a, float b, float c, float *x1, float *x2){
-	float delta = 0, aux1 = 0, aux2 = 0;
+	float delta = 0;
 	int n = 0;
 	
 	delta = ((b*b)-(4*a*c));
@@ -49,18 +48,17 @@ int raizes (float a, float b, float c, float *x1, float *x2){
 		
 	}
 	else if (delta == 0){
-		aux1 = (-b)/(2*a);
-		aux2 = aux1;
-		*x1 = aux1;
-		*x2 = aux2;
-		printf("%.2f", delta);
+		printf("O valor de Delta eh = %.2f\n\n",delta);
+		printf("\nA equacao possue duas raizes iguais\n");
+		*x1 = (-b)/(2*a);
+		*x2 = *x1;
 		n = 1;
 	}
 	else{
-		aux1 = ((-b) + sqrt(delta)) / (2*a);
-		aux2 = ((-b) - sqrt(delta)) / (2*a);
-		*x1 = aux1;
-		*x2 = aux2;
+		printf("O valor de Delta eh = %.2f\n\n",delta);
+		printf("\nA equacao possue duas raizes distintas\n");
+		*x1 = ((-b) - sqrt(delta)) / (2*a);
+		*x2 = ((-b) + sqrt(delta)) / (2*a);
 		n = 2;
 	}
 
