@@ -32,3 +32,5 @@ Questao 05
 	No comando: for(i = 0; i < 99; ++i)
 			a[i] = a[a[i]]; serao armazenados 99 valores no vetor, sendo de 0 ate 98;
 
+
+
