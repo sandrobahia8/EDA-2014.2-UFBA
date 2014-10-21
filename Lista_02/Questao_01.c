@@ -12,7 +12,7 @@ int main (){
     ptrvet = v;
 	printf("\n\nExplique a diferenca entre as expressoes abaixo.\n\n");
 	aux1 = v[3];
-	aux2 = (v + 3);
+	//aux2 = (v + 3);
 	aux3 = *(ptrvet + 3);
 	printf("\nOresultado da expressao 'v[3]' eh: %d \n\n", aux1);
 	printf("\nOresultado da expressao 'v + 3' eh: %d \n\n", aux2);

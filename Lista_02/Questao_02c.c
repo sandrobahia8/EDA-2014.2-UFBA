@@ -19,7 +19,7 @@ int main (){
         
     printf("\nA comparacao alfabetica esta correta abaixo:\n\n");
 
-    if (strcmp(a,b) == 0)
+    if (!strcmp(a,b))
 	printf("\n'%s' e '%s' eh a mesma palavra, estao no mesmo lugar do dicionario\n\n", a,b);
     else if (strcmp(a,b) == -1)
         	printf("\n'%s' vem antes de '%s' no dicionario\n\n", a,b);

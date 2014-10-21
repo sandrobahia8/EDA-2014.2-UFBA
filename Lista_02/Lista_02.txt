@@ -2,14 +2,23 @@ Lista 02
 
 Questao 01
 
-V[3]: Esta acessando a posicao de memoria de indice 3 em um vetor;
+	V[3]: Esta acessando a posicao de memoria de indice 3 em um vetor;
 
-V+3: Esta acessando um loal nao especifico da memoria.
-     Se V fosse uma variavel do tipo ponteiro e inicializada com o endereco da primeira posicao do vetor V, estaria sendo incrementada de tres 	    unidades, e acessaria a mesma posicao de memoria de V[3].
+	V+3: Esta acessando um loal nao especifico da memoria.
+	Se V fosse uma variavel do tipo ponteiro e inicializada com o endereco da primeira posicao do vetor V, estaria sendo incrementada de 		tres unidades, e acessaria a mesma posicao de memoria de V[3].
+
 
 Questao 02
 
-a) O ponteiro nao foi inicializado com o endereco de X, alem de nao ter sido usado o asterisco antecedendo o ponteiro para que ele recebesse 	e valor de X. Se os comandos "ptr = &x;" e "*ptr = x;" forem escritos o resultado serah impresso corretamente.
+	a) O ponteiro nao foi inicializado com o endereco de X, alem de nao ter sido usado o asterisco antecedendo o ponteiro para que ele 		recebesse e valor de X. Se os comandos "ptr = &x;" e "*ptr = x;" forem escritos o resultado serah impresso corretamente.
 
-b) O ponteiro "temp" nao foi inicializado, com isso ha falha na compilacao por erro de segmentacao. Podemos utilizar uma variavel auxiliar     	  para fazer o ponteiro "temp" apontar para um endereco valido. Feito isso as operacoes ocorrem normalmente.
+	b) O ponteiro "temp" nao foi inicializado, com isso ha falha na compilacao por erro de segmentacao. Podemos utilizar uma variavel 		auxiliar para fazer o ponteiro "temp" apontar para um endereco valido. Feito isso as operacoes ocorrem normalmente.
+
+	c) (a < b) esta comparando o endereço de memoria e nao a ordem alfabetica. Dessa forma sempre sera exibido "abacate" e depois "uva".
+	Para o trecho de codigo funcionar corretamente, sera necessario utilizar uma funcao de comparacao de strings "strcmp".
 	  
+
+Questao 03
+
+	Se o endereço inicial de 'v' eh '55000', e o tipo 'int' ocupa 8 bytes na referida arquitetura, entao 'v+3' estara na posicao de 		memoria '55024'
+
