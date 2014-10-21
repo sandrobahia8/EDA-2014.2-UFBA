@@ -22,3 +22,13 @@ Questao 03
 
 	Se o endereço inicial de 'v' eh '55000', e o tipo 'int' ocupa 8 bytes na referida arquitetura, entao 'v+3' estara na posicao de 		memoria '55024'
 
+
+
+Questao 05
+
+	No comando: for(i = 0; i < 99; ++i)
+			a[i] = 98 - i; serao armazenados 99 valores no vetor, sendo de 98 ate 0;
+
+	No comando: for(i = 0; i < 99; ++i)
+			a[i] = a[a[i]]; serao armazenados 99 valores no vetor, sendo de 0 ate 98;
+
