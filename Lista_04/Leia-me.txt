@@ -1,0 +1,10 @@
+UNIVERSIDADE FEDERAL DA BAHIA
+INSTITUTO DE MATEMÁTICA
+DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO
+ESTRUTURA DE DADOS E ALGORITMO
+
+Professor: Danilo
+
+Aluno: Alessandro Oliveira
+
+Resolução dos exercícios da lista 04.
